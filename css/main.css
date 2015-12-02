@@ -1,0 +1,26 @@
+.setting-form {
+    display: inline-block;
+}
+
+#board {
+    /*display: inline-block;*/
+}
+
+.long-row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.square-size {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.show-bg {
+    background: #00aaff;
+}

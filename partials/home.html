@@ -1,1 +1,35 @@
-<p>I am here</p>
+<div class="container">
+
+  <div class="starter-template">
+    <br><br>
+    <form ng-submit="start()">
+        <div class="setting-form">
+            <label>Number of Simultaneous Lives :</label>
+            <input type="number" ng-model="numberOfSpontaneousLifeforms" style="width: 40px;"><br>
+        </div>
+        <div class="setting-form">
+            <label>Number of Life Forms:</label>
+            <input type="number" ng-model="numberOfGenerations" style="width: 60px;">
+        </div>
+        <div class="setting-form">
+            <button type="submit">Start</button>
+        </div>
+    </form>
+        
+        <strong ng-show="rows.length > 0">Generation {{generationCount}}</strong>
+        <!-- <table id="board" class="table table-bordered">
+            <tr ng-repeat="row in rows">
+                <td class="square-size" ng-repeat="cell in row" ng-class="{'show-bg': cell.isAlive}">
+                    <i class="glyphicon glyphicon-fire" ng-show="cell.isAlive == true"></i>            
+                </td>
+            </tr>
+        </table> -->
+        <section id="board" class="section">
+            <div class="long-row" ng-repeat='row in rows'>
+                <div class="square-size" ng-repeat="cell in row" ng-class="{'show-bg': cell.isAlive}"></div>
+                <!-- <div class="square-size" ng-repeat="cell in row" ng-class="randomColor(cell)"></div> -->
+            </div>
+        </section>
+  </div>
+
+</div><!-- /.container -->
